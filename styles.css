@@ -1,0 +1,87 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  #head {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 1rem 0;
+    /* now fluidly shrinks on narrower viewports */
+    font-size: clamp(1rem, 4vw, 1.4rem);
+  }
+  
+  /* Choice & Score Containers */
+  #choice-container,
+  #score-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: clamp(1rem, 5vw, 4rem);
+    margin-top: 4rem;
+  }
+  
+  /* Choice Images */
+  .choice img {
+    width: clamp(4rem, 15vw, 8rem);
+    height: clamp(4rem, 15vw, 8rem);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.3em solid black;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 88);
+  }
+  
+  /* Scores */
+  .score {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+  }
+  
+  /* Result Footer */
+  #foot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    margin-top: 4rem;
+  }
+  
+  #result {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 8rem;
+  }
+  
+  /* Small tweak for very narrow screens */
+  @media (max-width: 400px) {
+    #head {
+      font-size: 1rem;
+    }
+  
+    #result {
+      font-size: 1rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+
+  p{
+    display: inline;
+  }
+  
